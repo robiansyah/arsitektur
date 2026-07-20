@@ -71,57 +71,54 @@
                             </span>
                         </div>
                         <div class="kt-menu-accordion gap-px ps-7">
-                            <div
-                                class="kt-menu-item {{ Request::segment(1) == 'admin' && Request::segment(2) == 'categories' ? 'active' : '' }}">
+                            <div class="kt-menu-item {{ Request::routeIs('admin.assessment-schema.index') ? 'active' : '' }}">
                                 <a class="kt-menu-link py-2 px-2.5 rounded-md border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border"
-                                    href="{{ route('admin.categories.index') }}">
-                                    <span
-                                        class="kt-menu-title text-sm text-mono kt-menu-item-active:text-mono kt-menu-link-hover:text-mono">
-                                        Kategori
+                                    href="{{ route('admin.assessment-schema.index') }}#organizations">
+                                    <span class="kt-menu-title text-sm text-mono kt-menu-item-active:text-mono kt-menu-link-hover:text-mono">
+                                        Organizations
                                     </span>
                                 </a>
                             </div>
-                            <div
-                                class="kt-menu-item {{ Request::segment(1) == 'admin' && Request::segment(2) == 'constructs' ? 'active' : '' }}">
+                            <div class="kt-menu-item {{ Request::routeIs('admin.assessment-schema.index') ? 'active' : '' }}">
                                 <a class="kt-menu-link py-2 px-2.5 rounded-md border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border"
-                                    href="{{ route('admin.constructs.index') }}">
-                                    <span
-                                        class="kt-menu-title text-sm text-mono kt-menu-item-active:text-mono kt-menu-link-hover:text-mono">
-                                        Konstruk
+                                    href="{{ route('admin.assessment-schema.index') }}#frameworks">
+                                    <span class="kt-menu-title text-sm text-mono kt-menu-item-active:text-mono kt-menu-link-hover:text-mono">
+                                        Frameworks
                                     </span>
                                 </a>
                             </div>
-                            <div
-                                class="kt-menu-item {{ Request::segment(1) == 'admin' && Request::segment(2) == 'tests' ? 'active' : '' }}">
+                            <div class="kt-menu-item {{ Request::routeIs('admin.assessment-schema.index') ? 'active' : '' }}">
                                 <a class="kt-menu-link py-2 px-2.5 rounded-md border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border"
-                                    href="{{ route('admin.tests.index') }}">
-                                    <span
-                                        class="kt-menu-title text-sm text-mono kt-menu-item-active:text-mono kt-menu-link-hover:text-mono">
-                                        Tes
+                                    href="{{ route('admin.assessment-schema.index') }}#constructs">
+                                    <span class="kt-menu-title text-sm text-mono kt-menu-item-active:text-mono kt-menu-link-hover:text-mono">
+                                        Constructs
                                     </span>
                                 </a>
                             </div>
-                            <div
-                                class="kt-menu-item {{ Request::segment(1) == 'admin' && Request::segment(2) == 'test-domains' || Request::segment(2) == 'test-subdomains' ? 'active' : '' }}">
+                            <div class="kt-menu-item {{ Request::routeIs('admin.assessment-schema.index') ? 'active' : '' }}">
                                 <a class="kt-menu-link py-2 px-2.5 rounded-md border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border"
-                                    href="{{ route('admin.test-domains.index') }}">
-                                    <span
-                                        class="kt-menu-title text-sm text-mono kt-menu-item-active:text-mono kt-menu-link-hover:text-mono">
-                                        Domain
+                                    href="{{ route('admin.assessment-schema.index') }}#instruments">
+                                    <span class="kt-menu-title text-sm text-mono kt-menu-item-active:text-mono kt-menu-link-hover:text-mono">
+                                        Instruments
                                     </span>
                                 </a>
                             </div>
-                            <div
-                                class="kt-menu-item {{ Request::segment(1) == 'admin' && Request::segment(2) == 'test-spesifications' || Request::segment(2) == 'test-indicators' ? 'active' : '' }}">
+                            <div class="kt-menu-item {{ Request::routeIs('admin.assessment-schema.index') ? 'active' : '' }}">
                                 <a class="kt-menu-link py-2 px-2.5 rounded-md border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border"
-                                    href="{{ route('admin.test-spesifications.index') }}">
-                                    <span
-                                        class="kt-menu-title text-sm text-mono kt-menu-item-active:text-mono kt-menu-link-hover:text-mono">
-                                        Spesifikasi
+                                    href="{{ route('admin.assessment-schema.index') }}#blueprints">
+                                    <span class="kt-menu-title text-sm text-mono kt-menu-item-active:text-mono kt-menu-link-hover:text-mono">
+                                        Blueprints
                                     </span>
                                 </a>
                             </div>
-                            
+                            <div class="kt-menu-item {{ Request::routeIs('admin.assessment-schema.index') ? 'active' : '' }}">
+                                <a class="kt-menu-link py-2 px-2.5 rounded-md border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border"
+                                    href="{{ route('admin.assessment-schema.index') }}#forms">
+                                    <span class="kt-menu-title text-sm text-mono kt-menu-item-active:text-mono kt-menu-link-hover:text-mono">
+                                        Forms
+                                    </span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 @endif
